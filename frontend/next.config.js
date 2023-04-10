@@ -5,8 +5,8 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: "/detect/:path*",
-        destination: "http://localhost:5000/detect/:path*",
+        source: "/detect/:id/:path*",
+        destination: "http://localhost:5000/detect/:id/:path*",
       },
     ];
   },

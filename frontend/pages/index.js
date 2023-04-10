@@ -1,11 +1,11 @@
 import React from 'react';
-import Restaurant from '../components/Restaurant';
+import Room from '../components/Room';
 
 // Import images
-import totoro from '../public/totoro.jpeg';
-import mani from '../public/mani.jpeg';
-import isalita from '../public/isalita.jpg';
-import Fritas from '../public/fritas.jpeg';
+import ross from '../public/ross.jpeg';
+import ugli from '../public/ugli.jpeg';
+import skb from '../public/skb.jpeg';
+import cccb from '../public/cccb.jpeg';
 
 export default function Home() {
   return (
@@ -14,29 +14,33 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center py-8">Table Vision</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-        <Restaurant
-          Name="Totoro"
-          Location="215 S State St #2031, Ann Arbor, MI 48104"
-          Icon={totoro}
-          link="https://totoroannarbor.com/"
+        <Room
+          id = "ross"
+          Name="Ross School of Business"
+          Location="701 Tappan Ave, Ann Arbor, MI 48109"
+          Icon={ross}
+          link="https://michiganross.umich.edu/"
         />
-        <Restaurant
-          Name="Mani Osteria"
+        <Room
+          id = "ugli"
+          Name="Shapiro Undergraduate Library"
+          Location="919 S University Ave, Ann Arbor, MI 48109"
+          Icon={ugli}
+          link="https://www.lib.umich.edu/locations-and-hours/shapiro-library"
+        />
+        <Room
+          id = "skb"
+          Name="School of Kinesiology"
           Location="341 E Liberty St, Ann Arbor, MI 48104"
-          Icon={mani}
-          link="https://maniosteria.com/"
+          Icon={skb}
+          link="https://www.kines.umich.edu/about/kinesiology-building"
         />
-        <Restaurant
-          Name="Isalita"
-          Location="341 E Liberty St, Ann Arbor, MI 48104"
-          Icon={isalita}
-          link="https://isalita.com/"
-        />
-        <Restaurant
-          Name="Frtia Batidos"
-          Location="117 W Washington St, Ann Arbor, MI 48104"
-          Icon={Fritas}
-          link="https://fritabatidos.com/"
+        <Room
+          id = "cccb"
+          Name="Central Campus Classroom Building"
+          Location="1225 Geddes Ave, Ann Arbor, MI 48109"
+          Icon={cccb}
+          link="https://cccb.provost.umich.edu/"
         />
       </div>
     </div>

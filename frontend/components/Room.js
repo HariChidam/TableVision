@@ -1,20 +1,18 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-export default function Restaurant({ Name, Location, Icon, link}) {
-
+export default function Restaurant({ id, Name, Location, Icon, link }) {
   const [boundingBoxes, setBoundingBoxes] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/detect')
+    fetch(`/detect/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setBoundingBoxes(data.bounding_boxes);
         setLoading(false);
       });
-  }, []);
+  }, [id]);
 
   const numTables = boundingBoxes.filter((box) => box.name === 'dining table').length;
 
@@ -28,11 +26,10 @@ export default function Restaurant({ Name, Location, Icon, link}) {
           <h1 className="text-2xl font-semibold text-gray-800">{Name}</h1>
           <p className="text-md text-gray-600">{Location}</p>
           <p className="text-md text-gray-600 mt-2">
-            Number of Tables: {!loading ? numTables : 'Loading..'}
+            Number of Open Tables: {!loading ? numTables : 'Loading..'}
           </p>
         </div>
       </div>
     </a>
-    
   );
 }
