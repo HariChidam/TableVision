@@ -5,7 +5,7 @@ import torch
 app = Flask(__name__)
 api = Api(app)
 
-model = torch.hub.load('ultralytics/yolov5', 'yolov5x')
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
 
 class Table(Resource):
     def get(self, room_id):
@@ -16,6 +16,14 @@ class Table(Resource):
         elif room_id == 'skb':
             im = './Rooms/room1/room1.jpeg'
         elif room_id == 'cccb':
+            im = './Rooms/room2/room2.jpeg'
+        elif room_id == 'Dude':
+            im = './Rooms/room1/room1.jpeg'
+        elif room_id == 'hatcher':
+            im = './Rooms/room2/room2.jpeg'
+        elif room_id == 'pierpont':
+            im = './Rooms/room1/room1.jpeg'
+        elif room_id == 'BBB':
             im = './Rooms/room2/room2.jpeg'
         else:
             return {'error': 'Invalid room ID'}

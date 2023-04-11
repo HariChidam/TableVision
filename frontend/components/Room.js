@@ -14,7 +14,8 @@ export default function Restaurant({ id, Name, Location, Icon, link }) {
       });
   }, [id]);
 
-  const numTables = boundingBoxes.filter((box) => box.name === 'dining table').length;
+  console.log(boundingBoxes);
+  const numTables = boundingBoxes.filter((box) => box.name === 'empty-table').length;
 
   return (
     <a href={link}>
