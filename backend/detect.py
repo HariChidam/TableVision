@@ -10,21 +10,29 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
 class Table(Resource):
     def get(self, room_id):
         if room_id == 'ross':
-            im = './Rooms/room1/room1.jpeg'
+            im = './Rooms/Ross.JPEG'
         elif room_id == 'ugli':
-            im = './Rooms/room2/room2.jpeg'
+            im = './Rooms/Ugli.jpg'
         elif room_id == 'skb':
-            im = './Rooms/room1/room1.jpeg'
+            im = './Rooms/SKB.jpg'
         elif room_id == 'cccb':
-            im = './Rooms/room2/room2.jpeg'
+            im = './Rooms/BBB.jpeg'
         elif room_id == 'Dude':
-            im = './Rooms/room1/room1.jpeg'
+            im = './Rooms/BBB.jpeg'
         elif room_id == 'hatcher':
-            im = './Rooms/room2/room2.jpeg'
+            im = './Rooms/Hatcher.jpg'
         elif room_id == 'pierpont':
-            im = './Rooms/room1/room1.jpeg'
+            im = './Rooms/BBB.jpeg'
         elif room_id == 'BBB':
-            im = './Rooms/room2/room2.jpeg'
+            im = './Rooms/BBB.jpeg'
+        elif room_id == 'Palmer':
+            im = './Rooms/Palmer.JPG'
+        elif room_id == 'EQ':
+            im = './Rooms/EQ.jpg'
+        elif room_id == 'SocialWork':
+            im = './Rooms/SocialWork.jpg'
+        elif room_id == 'Math':
+            im = './Rooms/Math.jpg'
         else:
             return {'error': 'Invalid room ID'}
 

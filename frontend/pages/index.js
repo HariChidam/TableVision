@@ -11,6 +11,11 @@ import BBB from '../public/BBB.jpeg';
 import hatcher from '../public/hatcher.jpeg';
 import Dude from '../public/Dude.jpeg';
 import Pierpont from '../public/Pierpont.jpeg';
+import Math from '../public/Math.jpeg';
+import Palmer from '../public/Palmer.jpeg';
+import SocialWork from '../public/SocialWork.jpeg';
+import EQ from '../public/EQ.jpeg';
+
 import Logo from '../public/Logo.svg';
 
 export default function Home() {
@@ -36,7 +41,7 @@ export default function Home() {
         />
         <Room
           id = "skb"
-          Name="School of Kinesiology"
+          Name="School of Kinesiology Building"
           Location="341 E Liberty St, Ann Arbor, MI 48104"
           Icon={skb}
           link="https://www.kines.umich.edu/about/kinesiology-building"
@@ -75,6 +80,34 @@ export default function Home() {
           Location="2101 Bonisteel Blvd, Ann Arbor, MI 48109"
           Icon={Pierpont}
           link="https://uunions.umich.edu/pierpont/"
+        />
+        <Room
+          id = "Math"
+          Name="East Hall"
+          Location="530 CHURCH ST Ann Arbor, MI 48109"
+          Icon={Math}
+          link="https://maps.studentlife.umich.edu/building/east-hall"
+        />
+        <Room
+          id = "Palmer"
+          Name="Palmer Commons"
+          Location="100 Washtenaw Ave, Ann Arbor, MI 48109"
+          Icon={Palmer}
+          link="https://palmercommons.umich.edu/"
+        />
+        <Room
+          id = "SocialWork"
+          Name="School of Social Work Building"
+          Location="1080 South University Avenue Ann Arbor, MI 48109-1106"
+          Icon={SocialWork}
+          link="https://ssw.umich.edu/contact"
+        />
+         <Room
+          id = "EQ"
+          Name="East Quadrangle"
+          Location="701 E University Ave, Ann Arbor, MI 48109"
+          Icon={EQ}
+          link="https://housing.umich.edu/residence-hall/east-quadrangle/"
         />
       </div>
     </div>
