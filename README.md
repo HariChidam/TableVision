@@ -1,6 +1,6 @@
 # TableVision
 
-
+You will also have to download best.pt from the tablevision drive and put that in the backend folder.
 You will need to install all the dependencies for the backend. You will also need to do that in a virtual environemt for the backend.
 
 # Running TableVision
