@@ -1,5 +1,6 @@
 import React from 'react';
 import Room from '../components/Room';
+import Descripton from '../components/Descripton';
 import Image from 'next/image';
 
 // Import images
@@ -24,7 +25,10 @@ export default function Home() {
       <div className='flex items-center justify-center h-full pt-16'>
         <Image src={Logo} alt="Logo" width={300} height={300} />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div>
+        <Descripton />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         <Room
           id = "ross"
           Name="Ross School of Business"

@@ -20,7 +20,7 @@ export default function Restaurant({ id, Name, Location, Icon, link }) {
   return (
     <a href={link}>
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-        <div className="h-52 relative">
+        <div className="h-52 relative shadow-lg">
           <Image className="h-full w-full object-cover" src={Icon} alt={Name} layout="fill" />
         </div>
         <div className="p-6">
@@ -34,3 +34,4 @@ export default function Restaurant({ id, Name, Location, Icon, link }) {
     </a>
   );
 }
+
