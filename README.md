@@ -1,7 +1,13 @@
 # TableVision
 
-You will also have to download best.pt from the tablevision drive and put that in the backend folder.
-You will need to install all the dependencies for the backend. You will also need to do that in a virtual environemt for the backend.
+1. Clone the repo
+2. You will need to create the virtual environment
+   ```python3 -m venv env```
+3. You will need to activate ```env```
+   ```source env/bin/activate```
+4. Install all the dependecies needed for the backend 
+   ```pip install -r https://raw.githubusercontent.com/ultralytics/yolov5/master/requirements.txt```
+5. Download best.pt from TableVison GDrive and put it in the root directory
 
 # Running TableVision
 
