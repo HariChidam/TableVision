@@ -28,6 +28,10 @@ export default function Home() {
       <div>
         <Descripton />
       </div>
+      <div>
+        <h1 className="text-4xl font-bold mb-2 text-center pt-20 pb-4 ">Study Spaces</h1>
+        <h1 className= "text-2xl font-bold mb-2 text-center">Click on a study space to see the photo our model is running on!</h1>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         <Room
           id = "ross"
@@ -35,6 +39,7 @@ export default function Home() {
           Location="701 Tappan Ave, Ann Arbor, MI 48109"
           Icon={ross}
           link="https://michiganross.umich.edu/"
+          
         />
         <Room
           id = "ugli"
