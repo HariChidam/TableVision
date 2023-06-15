@@ -5,7 +5,8 @@ import torch
 app = Flask(__name__)
 api = Api(app)
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
+# model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
+model = torch.hub.load('ultralytics/yolov5', 'yolov5x')
 
 class Table(Resource):
     def get(self, room_id):

@@ -31,6 +31,19 @@ export default function Home() {
       <div>
         <h1 className="text-4xl font-bold mb-2 text-center pt-20 pb-4 ">Study Spaces</h1>
         <h1 className= "text-2xl font-bold mb-2 text-center">Click on a study space to see the photo our model is running on!</h1>
+        <h1 className="text-2xl font-bold mb-2 text-center px-60 text-red-500 bg-gray-800">
+          <div className="py-4">
+            DISCLAIMER!! 
+          </div>
+          <div className="pb-4">
+            This is running on the default YOLOv5 model and showing the number of "dining tables". 
+            Our custom model is way more accurate at finding tables and empty tables than YOLOv5. 
+            To check out our model, email me at hari.chidam@gmail.com and I will send it over. 
+            Here is the Github Repo: 
+            <a href="https://github.com/HariChidam/TableVision" class="text-red-500 hover:underline"> https://github.com/HariChidam/TableVision</a>. 
+            You can clone it and run it with our custom model to see it in action! 
+          </div>
+        </h1> 
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         <Room

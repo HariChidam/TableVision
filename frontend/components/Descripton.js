@@ -1,6 +1,12 @@
 import React from 'react';
 
 export default function Description() {
+
+  const handleClick = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSd8lSQkO4WmecWxOafC4qCngf8MWviM2PopZo1ewxXz04vahA/viewform");
+  };
+
+
   return (
     <div className="flex items-center justify-center">
       <div className="bg-gray-800 bg-opacity-80 rounded-lg shadow-lg p-8 text-white max-w-7xl">
@@ -13,7 +19,7 @@ export default function Description() {
         <div className="mb-4 text-center">
           <h2 className="text-3xl font-bold mb-2">How does it work?</h2>
           <p className="text-lg">
-            TableVision software works by sending pictures of each study space to our Flask server. Our server then uses our custom computer vision model built on top of YoloV5 to detect the number of occupied and unoccupied tables in the room. Then our web app, which you are looking at, displays the number of open tables.
+            TableVision software works by sending pictures of each study space to our Flask server. Our server then uses our custom computer vision model built on top of YOLOv5 to detect the number of occupied and unoccupied tables in the room. Then our web app, which you are looking at, displays the number of open tables.
           </p>
         </div>
         <div className="mb-4 text-center">
@@ -30,7 +36,7 @@ export default function Description() {
         </div>
         <div className="text-center">
           <h1 className="text-3xl font-bold mb-2">Please fill out this form about TableVision to give us feedback!</h1>
-          <button className="px-4 py-2 bg-white text-gray-800 font-bold rounded-md">
+          <button className="px-4 py-2 bg-white text-gray-800 font-bold rounded-md" onClick={handleClick}>
             Feedback Form
           </button>
         </div>

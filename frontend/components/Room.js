@@ -35,7 +35,8 @@ export default function Restaurant({ id, Name, Location, Icon, link }) {
     fetchImage();
   }, [id]);
 
-  const numTables = boundingBoxes.filter((box) => box.name === 'empty-table').length;
+  // const numTables = boundingBoxes.filter((box) => box.name === 'empty-table').length;
+  const numTables = boundingBoxes.filter((box) => box.name === 'dining table').length;
 
   const handleIconClick = () => {
     setShowFirstPhoto(!showFirstPhoto);
