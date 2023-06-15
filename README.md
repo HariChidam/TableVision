@@ -18,3 +18,5 @@
 4. In the frontend terminal just run the next app ```npm run dev```
 
 You should be all set now!
+
+# To run with TableVision Custom CV model with empty table detection ability email hari.chidam@gmail.com!
