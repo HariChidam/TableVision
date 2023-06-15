@@ -11,4 +11,10 @@
 
 # Running TableVision
 
-In one terminal you will need to activate the virutal environment for the backend and then you will need to run the detect.py script which will start the Flask Server. Then in another terminal you will need to cd into the frontend and type ```npm run dev``` and that should get it running locally.
+1. Split the terminal
+2. In one ```cd frontend```
+3. In the other ```cd backend```
+4. In the backend terminal first activate the virtual environment ```source env/bin/activate``` then run the script ```python3 detect.py```
+4. In the frontend terminal just run the next app ```npm run dev```
+
+You should be all set now!
