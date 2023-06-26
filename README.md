@@ -1,5 +1,4 @@
-# TableVision
-
+# TableVision Setup
 1. Clone the repo
 2. You will need to create the virtual environment
    ```python3 -m venv env```
@@ -7,10 +6,8 @@
    ```source env/bin/activate```
 4. Install all the dependecies needed for the backend 
    ```pip install -r requirements.txt```
-5. Download best.pt from TableVison GDrive and put it in the root directory
 
 # Running TableVision
-
 1. Split the terminal
 2. In one ```cd frontend```
 3. In the other ```cd backend```
@@ -19,7 +16,7 @@
 
 You should be all set now!
 
-# To run with the proprietary TableVision Custom CV model email hari.chidam@gmail.com!
+# To use TableVision Custom CV model email hari.chidam@gmail.com!
 
 1. Once received put ```best.pt``` in ```/backend```
 2. In ```/backend/detect.py``` comment line 9 and uncomment line 8
