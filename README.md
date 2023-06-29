@@ -11,7 +11,7 @@
 1. Split the terminal
 2. In one ```cd frontend```
 3. In the other ```cd backend```
-4. In the backend terminal first activate the virtual environment ```source env/bin/activate`` then run the script ```python3 detect.py```
+4. In the backend terminal first activate the virtual environment ```source env/bin/activate``` then run the script ```python3 detect.py```
 4. In the frontend terminal just run the next app ```npm run dev```
 
 You should be all set now!
